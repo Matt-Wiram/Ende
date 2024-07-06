@@ -1,0 +1,96 @@
+{
+    "Map/SizeTest": {
+        "height": 4300,
+        "width": 2
+    },
+    "activeFile": "map1.tmx",
+    "expandedProjectPaths": [
+        "."
+    ],
+    "fileStates": {
+        "": {
+            "scaleInDock": 1
+        },
+        "TX Tileset Stone Ground.tsx": {
+            "scaleInEditor": 3
+        },
+        "TX Tileset Wall.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "desert.tsx": {
+            "dynamicWrapping": false,
+            "scaleInDock": 1,
+            "scaleInEditor": 3
+        },
+        "desert2.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 3
+        },
+        "desert_pieces.tsx": {
+            "dynamicWrapping": false,
+            "scaleInDock": 1,
+            "scaleInEditor": 2
+        },
+        "forest_floor.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 3
+        },
+        "forest_walls.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 2
+        },
+        "map1.tmx": {
+            "scale": 0.0625,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 3872,
+                "y": 2808
+            }
+        },
+        "map1.tmx#desert": {
+            "dynamicWrapping": false,
+            "scaleInEditor": 1
+        },
+        "stone_walls.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1.5
+        },
+        "tmw_desert_spacing.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 2
+        }
+    },
+    "last.externalTilesetPath": "C:/Users/Matt/IdeaProjects/Ende/maps",
+    "last.imagePath": "C:/Users/Matt/IdeaProjects/Ende/maps/Texture",
+    "map.height": 128,
+    "map.lastUsedFormat": "tmx",
+    "map.renderOrder": "3",
+    "map.width": 128,
+    "openFiles": [
+        "map1.tmx",
+        "forest_floor.tsx"
+    ],
+    "project": "world.tiled-project",
+    "recentFiles": [
+        "forest_floor.tsx",
+        "TX Tileset Stone Ground.tsx",
+        "TX Tileset Wall.tsx",
+        "forest_walls.tsx",
+        "desert_pieces.tsx",
+        "stone_walls.tsx",
+        "tmw_desert_spacing.tsx",
+        "map1.tmx",
+        "desert2.tsx",
+        "desert.tsx"
+    ],
+    "tileset.lastUsedFilter": "Tiled tileset files (*.tsx *.xml)",
+    "tileset.lastUsedFormat": "tsx",
+    "tileset.margin": 1,
+    "tileset.spacing": 1,
+    "tileset.tileSize": {
+        "height": 96,
+        "width": 96
+    },
+    "tileset.type": 0
+}
