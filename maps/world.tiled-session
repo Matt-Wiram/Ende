@@ -12,6 +12,7 @@
             "scaleInDock": 1
         },
         "TX Tileset Stone Ground.tsx": {
+            "scaleInDock": 1,
             "scaleInEditor": 3
         },
         "TX Tileset Wall.tsx": {
@@ -41,11 +42,11 @@
             "scaleInEditor": 2
         },
         "map1.tmx": {
-            "scale": 0.0625,
+            "scale": 0.33,
             "selectedLayer": 0,
             "viewCenter": {
-                "x": 3872,
-                "y": 2808
+                "x": 904.5454545454546,
+                "y": 1795.4545454545455
             }
         },
         "map1.tmx#desert": {
@@ -68,11 +69,11 @@
     "map.renderOrder": "3",
     "map.width": 128,
     "openFiles": [
-        "map1.tmx",
-        "forest_floor.tsx"
+        "map1.tmx"
     ],
     "project": "world.tiled-project",
     "recentFiles": [
+        "map1.tmx",
         "forest_floor.tsx",
         "TX Tileset Stone Ground.tsx",
         "TX Tileset Wall.tsx",
@@ -80,7 +81,6 @@
         "desert_pieces.tsx",
         "stone_walls.tsx",
         "tmw_desert_spacing.tsx",
-        "map1.tmx",
         "desert2.tsx",
         "desert.tsx"
     ],

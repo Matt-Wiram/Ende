@@ -1,3 +1,5 @@
+import math
+
 import pygame
 from settings import *
 
@@ -12,6 +14,8 @@ class Player(pygame.sprite.Sprite):
         self.image.fill("green")
         self.rect = self.image.get_rect(center = pos)
         self.z = LAYERS['main']
+        self.attackable = 1
+
 
         #movement
         self.direction = pygame.math.Vector2()
@@ -21,9 +25,26 @@ class Player(pygame.sprite.Sprite):
 
 
 
+
     def input(self):
+        #keyboard controls
         keys = pygame.key.get_pressed()
 
+
+ # mouse controls
+        click = pygame.event.get(1025)
+
+        if len(click) > 0:
+            #Grabbing the x and y from coords becuase they are different from player pos
+            x = click[0].pos[0]
+            y = click[0].pos[1]
+            self.target(x, y)
+
+
+
+
+
+#keyboard controls
     # vertical axis
         if keys[pygame.K_w]:
             self.direction.y = -1
@@ -38,6 +59,29 @@ class Player(pygame.sprite.Sprite):
             self.direction.x = 1
         else:
             self.direction.x = 0
+
+
+
+
+    def target(self, x, y):
+        print(x, y)
+        #Figuring out the direction the click is facing
+        x = x - SCREEN_WIDTH / 2
+        y = y - SCREEN_HEIGHT / 2
+        print(x, y)
+        #Grabbing the distance from the player, all items in direction and distance of 150 can be changed to be dynamic
+        distance = math.sqrt(x ** 2 + y ** 2)
+        print(self.pos)
+        print(distance)
+
+
+    # Was working on this for direction of sprite player
+        # if abs(x) > abs(y):
+        #     direction =
+        # elif abs(y) > abs(y):
+        #     direction =
+        # else:
+        #     direction =
 
 
 
