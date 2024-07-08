@@ -1,8 +1,9 @@
 import pygame
 
 LAYERS = {
+    'invisible': -1,
     'water': 0,
-    'ground': 1,
+    'floor': 1,
     'items': 2,
     'main': 3
 }

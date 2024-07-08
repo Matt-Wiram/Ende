@@ -55,11 +55,11 @@
             "scaleInEditor": 1
         },
         "map1.tmx": {
-            "scale": 0.0625,
+            "scale": 0.015625,
             "selectedLayer": 0,
             "viewCenter": {
-                "x": 12976,
-                "y": 11784
+                "x": 11008,
+                "y": 12384
             }
         },
         "map1.tmx#desert": {
@@ -67,7 +67,8 @@
             "scaleInEditor": 1
         },
         "props.tsx": {
-            "scaleInDock": 1
+            "scaleInDock": 1,
+            "scaleInEditor": 1
         },
         "stone_floor.tsx": {
             "scaleInDock": 1,
@@ -87,36 +88,38 @@
         }
     },
     "last.externalTilesetPath": "C:/Users/Matt/IdeaProjects/Ende/maps",
-    "last.imagePath": "C:/Users/Matt/IdeaProjects/Ende/maps/Texture",
+    "last.imagePath": "C:/Users/Matt/IdeaProjects/Ende/maps",
     "map.height": 128,
     "map.lastUsedFormat": "tmx",
     "map.renderOrder": "3",
+    "map.tileHeight": 96,
+    "map.tileWidth": 96,
     "map.width": 128,
     "openFiles": [
         "map1.tmx"
     ],
     "project": "world.tiled-project",
     "recentFiles": [
+        "grass_floor.tsx",
+        "stone_ground.tsx",
+        "map1.tmx",
+        "props.tsx",
         "forest_floor.tsx",
         "forest_map.tmx",
         "forest_walls.tsx",
-        "grass_floor.tsx",
         "stone_floor.tsx",
-        "stone_ground.tsx",
         "stone_walls.tsx",
         "TX Tileset Wall.tsx",
         "TX Tileset Stone Ground.tsx",
-        "desert_pieces.tsx",
-        "map1.tmx",
-        "tmw_desert_spacing.tsx"
+        "desert_pieces.tsx"
     ],
     "tileset.lastUsedFilter": "Tiled tileset files (*.tsx *.xml)",
     "tileset.lastUsedFormat": "tsx",
     "tileset.margin": 1,
     "tileset.spacing": 1,
     "tileset.tileSize": {
-        "height": 96,
-        "width": 96
+        "height": 140,
+        "width": 150
     },
     "tileset.type": 0
 }

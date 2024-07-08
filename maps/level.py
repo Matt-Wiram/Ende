@@ -26,7 +26,7 @@ class Level:
     # This is where you change map
         tmx_data = load_pygame('map1.tmx')
 
-        for layer in ['ground']:
+        for layer in ['floor']:
             for x, y, surf in tmx_data.get_layer_by_name(layer).tiles():
 
                 #This is where im making floor tiles and objects like chests
@@ -40,13 +40,29 @@ class Level:
 
 
         for obj in tmx_data.objects:
-            print(obj)
-            print(obj.template)
-            print(obj.image)
-            print(dir(obj.image))
+            layers = LAYERS['items']
 
 
-            # Furniture((obj.x +130, obj.y +130), obj.image, self.all_sprites, LAYERS[item])
+
+            # print(obj.visible)
+            # # <TiledObject[11]: "wood_chest_unopened">
+            #
+            # print(obj.type)
+            # # furniture
+            #
+            # print(obj.image)
+            # # <Surface(150x140x32 SW)>
+            #
+            # print(dir(obj.image))
+            # # ['__class__', '__copy__', '__delattr__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__le__', '__lt__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '_pixels_address', 'blit', 'blits', 'convert', 'convert_alpha', 'copy', 'fill', 'get_abs_offset', 'get_abs_parent', 'get_alpha', 'get_at', 'get_at_mapped', 'get_bitsize', 'get_blendmode', 'get_bounding_rect', 'get_buffer', 'get_bytesize', 'get_clip', 'get_colorkey', 'get_flags', 'get_height', 'get_locked', 'get_locks', 'get_losses', 'get_masks', 'get_offset', 'get_palette', 'get_palette_at', 'get_parent', 'get_pitch', 'get_rect', 'get_shifts', 'get_size', 'get_view', 'get_width', 'lock', 'map_rgb', 'mustlock', 'premul_alpha', 'scroll', 'set_alpha', 'set_at', 'set_clip', 'set_colorkey', 'set_masks', 'set_palette', 'set_palette_at', 'set_shifts', 'subsurface', 'unlock', 'unmap_rgb']
+
+
+            if not obj.visible:
+                layers = LAYERS['invisible']
+                print("Halp")
+
+            if obj.type == 'furniture':
+                Furniture((obj.x, obj.y), obj.image, self.all_sprites, layers)
 
 
         self.player = Player((SCREEN_WIDTH / 2, SCREEN_HEIGHT / 2), self.all_sprites)
