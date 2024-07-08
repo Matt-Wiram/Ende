@@ -7,6 +7,7 @@
     "expandedProjectPaths": [
         "."
     ],
+    "file.lastUsedOpenFilter": "All Files (*)",
     "fileStates": {
         "": {
             "scaleInDock": 1
@@ -37,20 +38,43 @@
             "scaleInDock": 1,
             "scaleInEditor": 3
         },
+        "forest_map.tmx": {
+            "scale": 0.029610188802083333,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 12833.420365535248,
+                "y": 10925.293390133296
+            }
+        },
         "forest_walls.tsx": {
             "scaleInDock": 1,
             "scaleInEditor": 2
         },
+        "grass_floor.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
         "map1.tmx": {
-            "scale": 0.33,
+            "scale": 0.0625,
             "selectedLayer": 0,
             "viewCenter": {
-                "x": 904.5454545454546,
-                "y": 1795.4545454545455
+                "x": 12976,
+                "y": 11784
             }
         },
         "map1.tmx#desert": {
             "dynamicWrapping": false,
+            "scaleInEditor": 1
+        },
+        "props.tsx": {
+            "scaleInDock": 1
+        },
+        "stone_floor.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "stone_ground.tsx": {
+            "scaleInDock": 1,
             "scaleInEditor": 1
         },
         "stone_walls.tsx": {
@@ -73,16 +97,18 @@
     ],
     "project": "world.tiled-project",
     "recentFiles": [
-        "map1.tmx",
         "forest_floor.tsx",
-        "TX Tileset Stone Ground.tsx",
-        "TX Tileset Wall.tsx",
+        "forest_map.tmx",
         "forest_walls.tsx",
-        "desert_pieces.tsx",
+        "grass_floor.tsx",
+        "stone_floor.tsx",
+        "stone_ground.tsx",
         "stone_walls.tsx",
-        "tmw_desert_spacing.tsx",
-        "desert2.tsx",
-        "desert.tsx"
+        "TX Tileset Wall.tsx",
+        "TX Tileset Stone Ground.tsx",
+        "desert_pieces.tsx",
+        "map1.tmx",
+        "tmw_desert_spacing.tsx"
     ],
     "tileset.lastUsedFilter": "Tiled tileset files (*.tsx *.xml)",
     "tileset.lastUsedFormat": "tsx",

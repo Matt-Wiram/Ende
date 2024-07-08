@@ -5,6 +5,7 @@ import pygame
 from settings import *
 from player import Player
 from sprites import Generic
+from sprites import Furniture
 from pytmx.util_pygame import load_pygame
 from monsters import Monster
 
@@ -22,18 +23,35 @@ class Level:
 
     # for setting up map and tiles along with objects and walls
     def setup(self):
+    # This is where you change map
         tmx_data = load_pygame('map1.tmx')
 
         for layer in ['ground']:
             for x, y, surf in tmx_data.get_layer_by_name(layer).tiles():
 
+                #This is where im making floor tiles and objects like chests
 
-                Generic((x * TILE_SIZE, y * TILE_SIZE), surf, self.all_sprites, LAYERS['ground'])
+
+
+
+                Generic((x * TILE_SIZE, y * TILE_SIZE), surf, self.all_sprites, LAYERS[layer])
+                 #####
+
+
+
+        for obj in tmx_data.objects:
+            print(obj)
+            print(obj.template)
+            print(obj.image)
+            print(dir(obj.image))
+
+
+            # Furniture((obj.x +130, obj.y +130), obj.image, self.all_sprites, LAYERS[item])
 
 
         self.player = Player((SCREEN_WIDTH / 2, SCREEN_HEIGHT / 2), self.all_sprites)
 
-        # #Monster
+     # #Monster set up and spawn and probably add to all.sprites and camera group
         # ran = random.randint(0, 1000)
         # if ran > 998:
         #     pass

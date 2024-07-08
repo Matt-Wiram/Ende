@@ -3,7 +3,8 @@ import pygame
 LAYERS = {
     'water': 0,
     'ground': 1,
-    'main': 2
+    'items': 2,
+    'main': 3
 }
 
 SCREEN_WIDTH = 1026

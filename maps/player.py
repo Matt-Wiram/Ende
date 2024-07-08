@@ -10,7 +10,7 @@ class Player(pygame.sprite.Sprite):
     def __init__(self, pos, group):
         super().__init__(group)
 
-        self.image = pygame.Surface((48, 96))
+        self.image = pygame.Surface((60, 110))
         self.image.fill("green")
         self.rect = self.image.get_rect(center = pos)
         self.z = LAYERS['main']
